@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class examples</title>
+    <style>
+        p::before{ /* bütün pragrafların başında mor renkli ve koyu "Once upon a time, " metni yazacak*/
+            content:"Once upon a time, ";
+            font-weight: bold;
+            color: blueviolet;
+        }
+        p:after{  /* bütün pragrafların sonunda kırmızı rekli ve koyu "The end, " metni yazacak*/
+            content: "The end.";
+            font-weight: bold;
+            color: crimson;
+        }
+        p::first-letter{ /* paragrafların ilk harfi 3 kat ve turuncu renkte olacaktır*/
+font-size: 300%;
+color: darkorange;
+        }
+        img[title]{border:2x olid darkorange;}
+        input[type="text"]{color:deeppink;}
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat eligendi natus perferendis nam, perspiciatis eum hic provident, dolor deserunt saepe soluta recusandae modi vel quam debitis aperiam eius qui.</p>
+    <img width="250px" height="250px" alt="deneme"><br>
+    <input type="text" placeholder="adınızı buraya yazınız">
+</body>
+</html>
